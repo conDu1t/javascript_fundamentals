@@ -7,6 +7,17 @@
 // returns whichever number is the greater (higher) number.
 // Call that function 2 times with different number pairs, and log the output to make sure it works (e.g. "The greater number of 5 and 10 is 10.").
 
+var bigNumber = 10
+var littleNumber = 5
+
+function greatNum(bigNumber, littleNumber){
+  if(bigNumber > littleNumber){
+    alert(bigNumber + " is more than " + littleNumber);
+  } else {
+    alert(bigNumber + " is less than " + littleNumber);
+  }
+}
+
 // EXERCISE: The World Translator
 
 // Write a function named helloWorld that:
