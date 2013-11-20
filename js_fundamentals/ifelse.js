@@ -68,6 +68,17 @@ function assignGrade(numberScore){
 // Call that function for a few different scores and log the result to make sure it works.
 // Bonus: Make it handle a few collective nouns like "sheep" and "geese".
 
+var noun = "dog"
+var number = 5
 
+function pluralize(noun, number){
+  if(number >= 2){
+    console.log(number + " " + noun + "s");
+  } else {
+    console.log(number + " " + noun);
+  }
+}
+
+// BONUS
 
 
