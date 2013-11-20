@@ -62,5 +62,13 @@ for (var i = 0; i < myBooks.length; i++) {
 // Create an object to store the following information about your favorite movie: title (a string), duration (a number), and stars (an array of strings).
 // Create a function to print out the movie information like so: "Puff the Magic Dragon lasts for 30 minutes. Stars: Puff, Jackie, Living Sneezes."
 
+var myMovie = {
+  movieTitle: "Sunshine",
+  duration: 107,
+  stars: ["Cillian Murphy", " Chris Evans", " Rose Byrne"]
+}
 
+function describeMovie(myMovie) {
+  console.log(myMovie.movieTitle + " lasts for " + myMovie.duration + " minutes. Stars: " + myMovie.stars)
+}
 
