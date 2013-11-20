@@ -13,6 +13,18 @@
 // cumin
 // cocoa
 
+var recipe = {
+  name: "Mole",
+  serves: 2,
+  ingredients: ["cinnamon", " cumin", " cocoa"]
+}
+
+console.log(recipe.name);
+console.log("Serves: " + recipe.serves);
+console.log("Ingredients: " + recipe.ingredients);
+
+
+
 // EXERCISE: The Reading List
 
 // Keep track of which books you read and which books you want to read!
