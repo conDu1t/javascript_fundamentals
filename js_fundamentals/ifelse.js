@@ -81,4 +81,21 @@ function pluralize(noun, number){
 
 // BONUS
 
+var noun = "dog"
+var number = 5
+
+function pluralize(noun, number){
+  if(number >= 2){
+    if(noun === "sheep"){
+      console.log(number + " Sheep");
+    } else if(noun === "goose"){
+      console.log(number + " Geese");
+    } else {
+      console.log(number + " " + noun + "s");
+    }
+  } else {
+    console.log(number + " " + noun);
+  }
+}
+
 
