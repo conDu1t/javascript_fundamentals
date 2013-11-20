@@ -33,6 +33,28 @@ console.log("Ingredients: " + recipe.ingredients);
 // Iterate through the array of books. For each book, log the book title and book author like so: "The Hobbit by J.R.R. Tolkien".
 // Now use an if/else statement to change the output depending on whether you read it yet or not. If you read it, log a string like 'You already read "The Hobbit" by J.R.R. Tolkien', and if not, log a string like 'You still need to read "The Lord of the Rings" by J.R.R. Tolkien.'
 
+var myBooks = [
+  {bookTitle: "Year of the Flood",
+  author: "Margaret Atwood",
+  alreadyRead: true },
+  {bookTitle: "Oryx and Crake",
+  author: "Magaret Atwood",
+  alreadyRead: true},
+  {bookTitle: "No Easy Day",
+  author: "Mark Owen",
+  alreadyRead: false}
+];
+
+for (var i = 0; i < myBooks.length; i++) {
+  var myBook = myBooks[i];
+  if(myBook.alreadyRead == true){
+    console.log("You've already read " + myBook.bookTitle + " by " + myBook.author);
+  } else {
+    console.log("You still need to read " + myBook.bookTitle + " by " + myBook.author);
+  }
+}
+
+
 // EXERCISE: The Movie Database
 
 // It's like IMDB, but much much smaller!
