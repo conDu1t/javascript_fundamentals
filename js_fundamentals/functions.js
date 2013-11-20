@@ -9,6 +9,26 @@
 // outputs your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
 // Call that function 3 times with 3 different values for the arguments.
 
+var children = 3;
+var geography = "Texas";
+var partner = "Diesel Dave";
+var vocation = "Mechanic";
+
+var children = 1
+var geography = "Alberta"
+var partner = "Oil Tycoon"
+var vocation = "housewife"
+
+var children = 2
+var geography = "Germany"
+var partner = "Einstein"
+var vocation = "Trophy husband"
+
+
+function fortuneTeller(children, geography, partner, vocation) {
+  alert("You will be a " + vocation + " in " + geography + ", and married to " + partner + " with " + children + " kids.");
+}
+
 // EXERCISE: The Age Calculator
 
 // Forgot how old you are? Calculate it!
@@ -20,6 +40,19 @@
 // Call the function three times with different sets of values.
 // Bonus: Figure out how to get the current year in JavaScript instead of passing it in.
 
+var currentYear = 2013
+var birthYear = 1989
+
+function calculateAge(birthYear, currentYear) {
+  alert("You are either " + (currentYear - birthYear) + " or " + (currentYear - birthYear - 1))
+}
+
+// BONUS
+
+function calculateAge(birthYear) {
+  alert("You are either " + (new Date().getFullYear() - birthYear) + " or " + (new Date().getFullYear() - birthYear - 1))
+}
+
 // EXERCISE: The Lifetime Supply Calculator
 
 // Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no more!
@@ -30,6 +63,8 @@
 // outputs the result to the screen like so: "You will need NN to last you until the ripe old age of X"
 // Call that function three times, passing in different values each time.
 // Bonus: Accept floating point values for amount per day, and round the result to a round number.
+
+
 
 // EXERCISE: The Geometrizer
 
@@ -56,4 +91,6 @@
 
 // Now store a fahrenheit temperature into a variable.
 // Convert it to celsius and output "NN°F is NN°C."
+
+
 

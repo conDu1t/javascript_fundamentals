@@ -7,4 +7,8 @@
 // Bonus: Change it to log "My 1st choice, "My 2nd choice", "My 3rd choice", picking the right suffix for the number based on what it is.
 
 
+var myColours = new Array("blue", "red", "purple", "white");
 
+for (var i = 0; i < myColours.length; i++) {
+  console.log("I dig the colour " + myColours[i]);
+}
