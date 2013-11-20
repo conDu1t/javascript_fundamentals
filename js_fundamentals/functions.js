@@ -44,13 +44,13 @@ var currentYear = 2013
 var birthYear = 1989
 
 function calculateAge(birthYear, currentYear) {
-  alert("You are either " + (currentYear - birthYear) + " or " + (currentYear - birthYear - 1))
+  alert("You are either " + (currentYear - birthYear) + " or " + (currentYear - birthYear - 1));
 }
 
 // BONUS
 
 function calculateAge(birthYear) {
-  alert("You are either " + (new Date().getFullYear() - birthYear) + " or " + (new Date().getFullYear() - birthYear - 1))
+  alert("You are either " + (new Date().getFullYear() - birthYear) + " or " + (new Date().getFullYear() - birthYear - 1));
 }
 
 // EXERCISE: The Lifetime Supply Calculator
@@ -64,6 +64,27 @@ function calculateAge(birthYear) {
 // Call that function three times, passing in different values each time.
 // Bonus: Accept floating point values for amount per day, and round the result to a round number.
 
+var age = 24
+var amountPerDay = 2
+
+var age = 16
+var amountPerDay = 5
+
+var age = 30
+var amountPerDay = 4
+
+function calculateSupply(age, amountPerDay){
+  alert("You will need " + (100 - age) * amountPerDay + " Cookies & Cream to last until the ripe old age of 100");
+}
+
+// BONUS
+
+var age = 24
+var amountPerDay = 2.681946
+
+function calculateSupply(age, amountPerDay){
+  alert("You will need " + Math.round((100 - age) * amountPerDay) + " Cookies & Cream to last until the ripe old age of 100");
+}
 
 
 // EXERCISE: The Geometrizer
@@ -74,10 +95,21 @@ function calculateAge(birthYear) {
 
 // Pass the radius to the function.
 // Calculate the circumference based on the radius, and output "The circumference is NN".
+
 // Create a function called calcArea:
 
 // Pass the radius to the function.
 // Calculate the area based on the radius, and output "The area is NN".
+
+var radius = 25;
+
+function calcCircumference(radius){
+  alert("The circumference is " + radius * 2 * 3.14);
+}
+
+function calcArea(radius){
+  alert("The area is " + 3.14 * (radius * radius));
+}
 
 // EXERCISE: The Temperature Converter
 
@@ -87,10 +119,23 @@ function calculateAge(birthYear) {
 
 // Store a celsius temperature into a variable.
 // Convert it to fahrenheit and output "NN°C is NN°F".
+
 // Create a function called fahrenheitToCelsius:
 
 // Now store a fahrenheit temperature into a variable.
 // Convert it to celsius and output "NN°F is NN°C."
+
+var celsius = 25
+
+function celsiusToFahrenheit(celsius){
+  alert(celsius + "°C is " + (celsius * 9 / 5 + 32) + "°F");
+}
+
+var fahrenheit = 90
+
+function fahrenheitToCelsius(fahrenheit){
+  alert(fahrenheit + "°F is " + Math.round((fahrenheit - 32) * 5 / 9) + "°C");
+}
 
 
 
