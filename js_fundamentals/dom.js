@@ -10,6 +10,17 @@
 // Find the Google search button and store it in a variable.
 // Modify the text of the button so that it says "Yahooo!" instead.
 
+var url1 = "(/images/srpr/logo11w.png) no-repeat;background-size:269px"
+var url2 = "http://www.underconsideration.com/brandnew/archives/yahoo_logo_detail.png"
+
+function replaceLogo(){
+  document.getElementById('hplogo').style = "background:url(http://www.underconsideration.com/brandnew/archives/yahoo_logo_detail.png)";
+}
+
+function replaceButton(){
+  document.getElementById('gbqfsa').innerHTML = "Yahoo Search";
+}
+
 // EXERCISE: About Me
 
 // Cuz every webpage needs an "About" section.
@@ -38,6 +49,8 @@
 // Replace each of the spans (nickname, favorites, hometown) with your own information.
 // Iterate through each li and change the class to "listitem". Add a style tag that sets a rule for "listitem" to make the color red.
 // Create a new img element and set its src attribute to a picture of you. Append that element to the page.
+
+
 
 // EXERCISE: The Book List
 
