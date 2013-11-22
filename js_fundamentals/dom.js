@@ -10,16 +10,13 @@
 // Find the Google search button and store it in a variable.
 // Modify the text of the button so that it says "Yahooo!" instead.
 
-var url1 = "(/images/srpr/logo11w.png) no-repeat;background-size:269px"
-var url2 = "http://www.underconsideration.com/brandnew/archives/yahoo_logo_detail.png"
+var logo = document.getElementById('hplogo');
+logo.src = "http://l.yimg.com/rz/d/yahoo_frontpage_en-CA_s_f_p_101x50_frontpage.png";
 
-function replaceLogo(){
-  document.getElementById('hplogo').style = "background:url(http://www.underconsideration.com/brandnew/archives/yahoo_logo_detail.png)";
-}
 
-function replaceButton(){
-  document.getElementById('gbqfsa').innerHTML = "Yahoo Search";
-}
+var searchButton = document.getElementById('gbqfsa');
+searchButton.innerHTML = "Yahoo Search";
+
 
 // EXERCISE: About Me
 
