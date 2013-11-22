@@ -13,7 +13,6 @@
 var logo = document.getElementById('hplogo');
 logo.src = "http://l.yimg.com/rz/d/yahoo_frontpage_en-CA_s_f_p_101x50_frontpage.png";
 
-
 var searchButton = document.getElementById('gbqfsa');
 searchButton.innerHTML = "Yahoo Search";
 
