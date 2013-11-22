@@ -24,8 +24,18 @@
   document.getElementById('hometown').innerHTML = "Waterloo, ON";
 
   var list = document.getElementsByTagName('li')
+
+
   for (var i = 0; i < list.length; i++){
-    list.style.color = "red";
+    list[i].className = "listitem";
+    console.log(list[i]);
+  }
+
+  var newList = document.getElementsByClassName('listitem')
+
+  for (var p = 0; p < newList.length; p++){
+    newList[p].style.color = "red"
+    console.log(newList[p]);
   }
   </script>
 
