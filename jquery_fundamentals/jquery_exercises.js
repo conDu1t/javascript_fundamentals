@@ -110,6 +110,11 @@
 // Show the number of children in an alert
 // Hint: you can use .children, .length and alert or you could use .find, .size and alert. the alert should show 5
 
+// $(document).ready(function(){
+//   var amountOfChildren = $('.child').length;
+//   alert(amountOfChildren);
+// });
+
 // EXERCISE: Animate
 
 // Make "#target" double size with animation
