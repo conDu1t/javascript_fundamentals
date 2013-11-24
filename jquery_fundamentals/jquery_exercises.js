@@ -6,7 +6,7 @@
 // Hint: you can use .css
 
 $(document).ready(function(){
-  $("#target").css("background-color", "black")
+  $("#target").css("background-color", "black");
 });
 
 // EXERCISE: Change Parent
@@ -15,13 +15,18 @@ $(document).ready(function(){
 // Hint: you can use .text
 
 $(document).ready(function(){
-  $("span").text("changed")
+  $("span").text("changed");
 })
 
 // EXERCISE: Create Clone
 
 // Create a clone of the span in "#target" and position it under the origin.
 // Hint: you can use .clone and .insertAfter
+
+$(document).ready(function(){
+  $("span").clone().insertAfter("span");
+});
+
 
 // EXERCISE: Use Filter
 
