@@ -145,6 +145,10 @@
 // Remove all children of "#target" but h2
 // Hint: you can use .children, .not and .remove
 
+// $(document).ready(function(){
+//   $('#target').children().not('h2').remove();
+// });
+
 // EXERCISE: Without Children
 
 // Remove all 'div' whitch has no child elements.
