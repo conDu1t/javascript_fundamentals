@@ -120,6 +120,17 @@
 // Make "#target" double size with animation
 // Hint: you can use .animate, .width, and .height
 
+// $(document).ready(function(){
+//   var doubleHeight = $('#target').height()*2;
+//   var doubleWidth = $('#target').width()*2;
+//   setTimeout(function(){
+//     $('#target').animate({
+//       height: doubleHeight,
+//       width: doubleWidth
+//     }, 5000);
+//   }, 4000);
+// })
+
 // EXERCISE: Alternate Color
 
 // Make the list-box alternating. (Make odd options a different color)
