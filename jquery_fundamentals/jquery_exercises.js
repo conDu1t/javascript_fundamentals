@@ -136,6 +136,10 @@
 // Make the list-box alternating. (Make odd options a different color)
 // Hint: you can select the option and use .filter and .css
 
+// $(document).ready(function(){
+//   $("option").filter(":odd").css("background-color", "tomato");
+// });
+
 // EXERCISE: All But One
 
 // Remove all children of "#target" but h2
