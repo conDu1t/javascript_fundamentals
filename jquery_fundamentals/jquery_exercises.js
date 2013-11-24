@@ -37,11 +37,14 @@
 //   $(".target").eq(1).css("background-color", "tomato");
 // });
 
-
 // EXERCISE: Disable Buttons
 
 // Disable the button
 // Hint: you will have to select the button and can use .attr
+
+$(document).ready(function(){
+  $('button').attr('disabled', true);
+})
 
 // EXERCISE: Uncheck CheckBoxes
 
