@@ -78,6 +78,13 @@
 // Make "#target" double size
 // Hint: you can use .css, .width and .height
 
+// $(document).ready(function(){
+//   var originalHeight = $('#target').height();
+//   var originalWidth = $('#target').width();
+//   $('#target').width(originalWidth*2);
+//   $('#target').height(originalHeight*2);
+// })
+
 // EXERCISE: Empty Elements
 // Hint: you can use .empty
 
