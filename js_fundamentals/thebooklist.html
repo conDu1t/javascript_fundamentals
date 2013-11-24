@@ -2,7 +2,7 @@
 <html>
  <head>
   <meta charset="utf-8"/>
-  <title>About Me</title>
+  <title>Book List</title>
 
   </head>
   <body>
@@ -11,6 +11,29 @@
 
 
     <script>
+
+    function book(title, author, alreadyRead){
+      this.title = title;
+      this.author = author;
+      this.alreadyRead = alreadyRead;
+    }
+
+
+      var yoTF = new book("Year of the Flood", "Margaret Atwood", true);
+      var oaC = new book("Oryx and Crake", "Margaret Atwood", true);
+      var neD = new book("No Easy Day", "Mark Owen", false);
+
+      var readingList = [yoTF, oaC, neD]
+
+
+    for( i = 0; i <= readingList.length; i++){
+      currentBook = readingList[i];
+      if(currentBook.alreadyRead == true){
+        document.write("<p>" + currentBook.title + " by " + currentBook.author + "</p>")
+      } else {
+        document.write("<p>You still have to read " + currentBook.title + " by " + currentBook.author + "</p>")
+      }
+    }
 
     </script>
   </body>
