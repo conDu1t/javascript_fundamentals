@@ -99,6 +99,12 @@
 // Show Alert with 1 second delay (Use "setTimeout")
 // Hint: you can use .setTimeout and alert
 
+// $(document).ready(function(){
+//   setTimeout(function(){
+//     alert("whoopwhoopwhoop");
+//   },1000)
+// });
+
 // EXERCISE: Count
 
 // Show the number of children in an alert
