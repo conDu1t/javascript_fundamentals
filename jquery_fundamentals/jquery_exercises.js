@@ -60,6 +60,10 @@
 // Move "#child" from "#parent1" to "#parent2"
 // Hint: you can use .appendTo
 
+// $(document).ready(function(){
+//   $('#child').appendTo('#parent2');
+// });
+
 // EXERCISE: Select A Option in A Select Box
 
 // Select the second option in the selectbox by script
