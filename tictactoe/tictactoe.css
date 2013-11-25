@@ -5,7 +5,7 @@ body {
 .container {
   width:75%;
   text-align: center;
-  margin-left: 150px;
+  margin-left: 245px;
 }
 
 .box {
@@ -14,4 +14,6 @@ body {
   border: 1px;
   background-color: gray;
   border-radius: 10px;
+  float: left;
+  margin: 5px;
 }
