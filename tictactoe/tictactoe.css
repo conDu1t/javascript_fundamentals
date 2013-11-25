@@ -3,17 +3,27 @@ body {
 }
 
 .container {
-  width:75%;
-  text-align: center;
-  margin-left: 245px;
+  margin-left: 390px;
 }
 
-.box {
-  width: 250px;
-  height: 250px;
-  border: 1px;
-  background-color: gray;
+table {
+  width: 30em;
+  height: 30em;
+}
+
+table td{
+  border: 1px solid black;
+}
+
+td {
+  padding: 0;
+  width: 33.3%;
+  height: 33.3%;
+  background-color: lightgrey;
   border-radius: 10px;
-  float: left;
-  margin: 5px;
+}
+
+td, th {
+  display: table-cell;
+  vertical-align: inhereit;
 }
