@@ -2,30 +2,103 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="tictactoe.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
     <script type="text/javascript">
-
+      var game = {
+        turn: "X",
+        instruct: function(str) {
+          $('caption').text(str);
+        },
+        begin: function() {
+          $('body').off('click');
+          $('td')
+            .text('')
+            .removeClass('taken')
+            .removeClass('win')
+          $('td').click(function(){
+            $(this)
+              .text(game.turn)
+              .addClass('taken')
+              .off('click')
+            var game_over = false;
+            if ($('td.taken').length > 4){
+              if (game.win_on_turn($(this).parent().index())){
+                game.instruct("Game over, " + game.turn + " won. Click to play again.");
+                game.over = true;
+              } else if ($('td.taken').length == 9) {
+                game.instruct("Game over: tie game. Click to play again.");
+                game.over = true;
+              }
+            }
+            if(game.over) {
+              $('body').removeClass('game-on');
+              $('td').off('click');
+              setTimeout(function(){$('body').click(game.begin)}, 1);
+            } else {
+              game.turn = game.turn == "X" ? "O" : "X"
+              game.turn_begin();
+            }
+          });
+          $('body').addClass('game-on');
+          game.turn_begin();
+        },
+        turn_begin: function() {
+          game.instruct("Your turn, " + game.turn);
+        },
+        cell: function(row, col) {
+          return $('tr:eq(' + row + ') td:eq(' + col + ')');
+        },
+        check_n_show_win: function(a, b, c) {
+          a = game.cell(a[0], a[1]);
+          b = game.cell(b[0], b[1]);
+          c = game.cell(c[0], c[1]);
+          if (a.text() && a.text()==b.text() && b.text()==c.text()) {
+            a.addClass('win');
+            b.addClass('win');
+            c.addClass('win');
+            return true;
+          }
+          return false;
+        },
+        win_on_turn: function(row, col) {
+          if (game.check_n_show_win([row, 0], [row, 1], [row, 2])){
+            return true;
+          }
+          if (game.check_n_show_win([ 0, col], [1, col], [2, col])){
+            return true;
+          }
+          if (game.check_n_show_win([2,0], [1,1], [0,2])){
+            return true;
+          }
+          return game.check_n_show_win([0,0], [1,1], [2,2]);
+        }
+      };
+      $(function(){
+        game.begin();
+      });
     </script>
   </head>
-  <body>
+  <body style class="game-on">
     <h1>Tic Tac Toe</h1>
     <div class="container">
       <table>
+        <caption></caption>
         <tbody>
           <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class></td>
+            <td class></td>
+            <td class></td>
           </tr>
           <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class></td>
+            <td class></td>
+            <td class></td>
           </tr>
           <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class></td>
+            <td class></td>
+            <td class></td>
           </tr>
         </tbody>
       </table>
