@@ -21,9 +21,25 @@ td {
   height: 33.3%;
   background-color: lightgrey;
   border-radius: 10px;
+  font-size: 80px;
+  color: #F9F9F9;
 }
 
 td, th {
   display: table-cell;
   vertical-align: inhereit;
+}
+
+body.game-on td:hover{
+  cursor: pointer;
+  background-color: #2980b9;
+}
+
+body.game-on td.taken {
+  cursor: default;
+  background-color: #2c3e50
+}
+
+td.win {
+  background-color: #c0392b;
 }

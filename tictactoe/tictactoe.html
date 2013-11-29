@@ -20,18 +20,18 @@
             $(this)
               .text(game.turn)
               .addClass('taken')
-              .off('click')
+              .off('click');
             var game_over = false;
             if ($('td.taken').length > 4){
               if (game.win_on_turn($(this).parent().index())){
                 game.instruct("Game over, " + game.turn + " won. Click to play again.");
-                game.over = true;
+                game_over = true;
               } else if ($('td.taken').length == 9) {
                 game.instruct("Game over: tie game. Click to play again.");
-                game.over = true;
+                game_over = true;
               }
             }
-            if(game.over) {
+            if(game_over) {
               $('body').removeClass('game-on');
               $('td').off('click');
               setTimeout(function(){$('body').click(game.begin)}, 1);
@@ -65,7 +65,7 @@
           if (game.check_n_show_win([row, 0], [row, 1], [row, 2])){
             return true;
           }
-          if (game.check_n_show_win([ 0, col], [1, col], [2, col])){
+          if (game.check_n_show_win([0, col], [1, col], [2, col])){
             return true;
           }
           if (game.check_n_show_win([2,0], [1,1], [0,2])){
